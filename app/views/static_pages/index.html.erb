@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="center-block cntr">
+<h1>フリック入力受信</h1>
+<p>↓スマホで読み取り</p>
+<a href="#" id="plink" target="_blank"><div id="qrcode"></div></a><br>
+<textarea name="area" id="area" cols="60" rows="10" readonly></textarea>
+</div></div>
+<%= javascript_include_tag 'https://cdn.webrtc.ecl.ntt.com/skyway-1.0.1.js' %>
+<%= javascript_include_tag 'pc' %>
+<%= javascript_include_tag 'key' %>
+<%= javascript_include_tag 'jquery.qrcode.min' %>
+<style>
+.cntr{text-align: center;}
+textarea{font-size: x-large;}
+</style>

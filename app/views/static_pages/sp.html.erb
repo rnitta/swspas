@@ -1,0 +1,17 @@
+<div class="container center-block cntr">
+<h1>フリック入力</h1>
+<div class="message"></div>
+<textarea name="sp" id="sp" cols="30" rows="10"></textarea>
+<script>
+</script>
+<div id="connections"><span class="filler">You have not yet
+        made any connections.</span></div>
+        <div class="identifier" id="<%= params[:pid] %>"></div>
+</div>
+<%= javascript_include_tag 'https://cdn.webrtc.ecl.ntt.com/skyway-1.0.1.js' %>
+<%= javascript_include_tag 'sp' %>
+<%= javascript_include_tag 'key' %>
+<style>
+.cntr{text-align: center;}
+textarea{font-size: x-large;}
+</style>
